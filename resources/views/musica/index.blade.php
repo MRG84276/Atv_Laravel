@@ -4,7 +4,7 @@
 @endif
 <ul>
 
-@foreach ($musics as $music)
+@foreach ($musicas as $music)
     <li>{{ $music->titulo }} <a href="/musics/{{ $music->id }}">Detalhes</a> </li>
 @endforeach
 </ul>

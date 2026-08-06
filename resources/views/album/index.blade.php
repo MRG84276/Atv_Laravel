@@ -1,4 +1,4 @@
-<a href="{{ route('albuns.create') }}">Adicionar album</a>
+<a href="{{ route('album.create') }}">Adicionar album</a>
 @if (session('success'))
     <span>{{ session('success') }}</span>
 @endif

@@ -39,7 +39,7 @@ class AlbumController extends Controller
 
         Album::create($request->all());
 
-        return redirect()->route('albuns.index')->with('success','Álbum criado com sucesso');
+        return redirect()->route('album.index')->with('success','Álbum criado com sucesso');
     }
 
     /**
@@ -59,6 +59,6 @@ class AlbumController extends Controller
         $album = Album::findOrFail($id);
         $album->delete();
 
-        return redirect()->route('albuns.index')->with('sucesso', 'Álbum exclúido com sucesso');
+        return redirect()->route('album.index')->with('sucesso', 'Álbum exclúido com sucesso');
     }
 }

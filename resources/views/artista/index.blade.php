@@ -1,4 +1,4 @@
-<a href="{{ route('artistas.create') }}">Adicionar artista</a>
+<a href="{{ route('artista.create') }}">Adicionar artista</a>
 @if (session('success'))
     <span>{{ session('success') }}</span>
 @endif
@@ -6,7 +6,7 @@
 
 @foreach ($artista as $artistas)
     <li>
-        {{ $artistas->titulo }} <a href="/albuns/{{ $artistas->id }}">Detalhes</a>
+        {{ $artistas->name }} <a href="/albuns/{{ $artistas->id }}">Detalhes</a>
     </li>
 @endforeach
 </ul>
