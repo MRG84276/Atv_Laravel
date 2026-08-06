@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('foto_url')->nullable();
             $table->date('data_origem');
-            $table->timestamp('create_at');
             
             $table->timestamps();
         });

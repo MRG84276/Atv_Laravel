@@ -1,4 +1,4 @@
-<form method="post" action="/artistas">
+<form method="post" action="{{ route('artista.store') }}">
     @csrf
     <input type="text" name="name">
     <input type="text" name="foto_url">
