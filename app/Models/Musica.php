@@ -16,6 +16,7 @@ class Musica extends Model
         'album_id',
         'duracao',
     ];
+    protected $table = 'musica';
 
     public function album(){
         return $this->belongsTo(Album::class, 'album_id');

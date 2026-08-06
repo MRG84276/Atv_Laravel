@@ -36,7 +36,7 @@ class ArtistaController extends Controller
         ]);
 
         Artista::create($request->all());
-        return redirect()->route('artistas.index')->with('success','Artista criado com sucesso!');
+        return redirect()->route('artista.index')->with('success','Artista criado com sucesso!');
 
     }
 
@@ -70,7 +70,7 @@ class ArtistaController extends Controller
             "data_origem"=> $request->data_origem,
         ]);
 
-        return redirect()->route("artistas.index")->with("success","Artista $artista->name atualizado com sucesso!");
+        return redirect()->route('artista.index')->with("success","Artista $artista->name atualizado com sucesso!");
     }
 
     /**

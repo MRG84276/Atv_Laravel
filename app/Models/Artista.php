@@ -9,6 +9,8 @@ class Artista extends Model
 {
     use HasFactory;
 
+    protected $table = "artista";
+
     protected $fillable = [
         'name',
         'foto_url',

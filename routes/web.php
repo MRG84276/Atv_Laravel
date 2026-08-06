@@ -33,8 +33,3 @@ Route::get('/artistas/{music}/edit', [ArtistaController::class, 'edit'])->name('
 Route::put('/artistas/{music}', [ArtistaController::class, 'update'])->name('artista.update');
 Route::delete('/artistas/{music}', [ArtistaController::class, 'destroy'])->name('artista.destroy');
 
-
-
-Route::resource('/musics', MusicaController::class);
-Route::resource('/albuns', AlbumController::class);
-Route::resource('/artistas', ArtistaController::class);
